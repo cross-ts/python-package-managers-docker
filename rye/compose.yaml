@@ -1,0 +1,15 @@
+services:
+  app:
+    build:
+      context: .
+      args:
+        - USER=portal
+        - UID=10001
+        - RYE_VERSION=0.32.0
+    volumes:
+      - type: volume
+        source: .venv
+        target: /var/run/.venv
+
+volumes:
+  .venv:
