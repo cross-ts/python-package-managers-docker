@@ -1,0 +1,8 @@
+services:
+  app:
+    build:
+      context: .
+      args:
+        - USER=portal
+        - UID=10001
+        - POETRY_VERSION=1.8.2
